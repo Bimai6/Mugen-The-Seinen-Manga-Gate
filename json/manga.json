@@ -1,0 +1,148 @@
+{
+    "manga": [
+        {
+            "id": 1,
+            "frontPage": "../images/blame.jpeg",
+            "title": "BLAME!",
+            "year": "1996",
+            "state": "Finished",
+            "genre": "Cyberpunk, Action, Sci-Fi",
+            "edition": "Panini's MASTER EDITION",
+            "nTomes": "6",
+            "mangaka": "Tsutomu Nihei",
+            "description": "In BLAME!, Killy, a lone wanderer, traverses a vast, hostile megastructure known as 'The City' in search of the elusive 'Net Terminal Genes' — the key to stopping its endless expansion. Armed with a powerful weapon, he battles rogue AI, cyborgs, and safeguard enforcers while uncovering the dark secrets of a world where technology has spiraled beyond control."
+        },
+        {
+            "id": 2,
+            "frontPage": "../images/berserk.jpeg",
+            "title": "Berserk",
+            "year": "1989",
+            "state": "Ongoing",
+            "genre": "Dark Fantasy, Action, Horror",
+            "edition": "Dark Horse Deluxe Edition",
+            "nTomes": "41",
+            "mangaka": "Kentaro Miura",
+            "description": "In Berserk, Guts, a lone mercenary, embarks on a brutal journey for vengeance against his former friend Griffith, who betrayed him to ascend in power. Haunted by demons and grappling with his own monstrous rage, Guts battles his way through a dark fantasy world filled with political strife and supernatural horrors."
+        },
+        {
+            "id": 3,
+            "frontPage": "../images/vagabond.jpeg",
+            "title": "Vagabond",
+            "year": "1998",
+            "state": "Hiatus",
+            "genre": "Historical, Martial Arts, Drama",
+            "edition": "Viz Big Edition",
+            "nTomes": "37",
+            "mangaka": "Takehiko Inoue",
+            "description": "Vagabond follows Miyamoto Musashi, a fierce swordsman seeking purpose in feudal Japan. His journey to become the ultimate samurai is filled with battles, philosophical struggles, and profound questions of honor and identity, set against the backdrop of a war-torn Japan."
+        },
+        {
+            "id": 4,
+            "frontPage": "../images/monster.jpeg",
+            "title": "Monster",
+            "year": "1994",
+            "state": "Finished",
+            "genre": "Psychological, Thriller, Mystery",
+            "edition": "Perfect Edition by VIZ Media",
+            "nTomes": "18",
+            "mangaka": "Naoki Urasawa",
+            "description": "Monster tells the story of Dr. Kenzo Tenma, a Japanese surgeon in Germany whose life spirals out of control after he saves the life of a young boy who grows up to become a serial killer. Driven by guilt, Tenma embarks on a mission to hunt down the monster he helped create."
+        },
+        {
+            "id": 5,
+            "frontPage": "../images/gantz.jpeg",
+            "title": "Gantz",
+            "year": "2000",
+            "state": "Finished",
+            "genre": "Action, Sci-Fi, Horror",
+            "edition": "Dark Horse Omnibus",
+            "nTomes": "37",
+            "mangaka": "Hiroya Oku",
+            "description": "In Gantz, Kei Kurono and other recently deceased people find themselves resurrected by a mysterious sphere and forced to participate in violent missions against extraterrestrial threats. They must rely on advanced weaponry and their own wits to survive each brutal encounter."
+        },
+        {
+            "id": 6,
+            "frontPage": "../images/20thcenturyboys.jpeg",
+            "title": "20th Century Boys",
+            "year": "1999",
+            "state": "Finished",
+            "genre": "Mystery, Sci-Fi, Thriller",
+            "edition": "Perfect Edition by VIZ Media",
+            "nTomes": "22",
+            "mangaka": "Naoki Urasawa",
+            "description": "20th Century Boys follows Kenji and his friends, who must confront a series of apocalyptic events connected to their childhood games. As they unravel the mystery, they face a cult led by a mysterious figure known as 'Friend' who threatens humanity with world-ending plans."
+        },
+        {
+            "id": 7,
+            "frontPage": "../images/ajin.jpeg",
+            "title": "Ajin: Demi-Human",
+            "year": "2012",
+            "state": "Finished",
+            "genre": "Horror, Supernatural, Action",
+            "edition": "Vertical's Edition",
+            "nTomes": "17",
+            "mangaka": "Gamon Sakurai",
+            "description": "Ajin: Demi-Human centers on Kei Nagai, who discovers he's an 'Ajin,' an immortal being hunted by the government. As he grapples with his new reality, Kei must evade capture and face other Ajin with their own agendas and deadly powers."
+        },
+        {
+            "id": 8,
+            "frontPage": "../images/inuyashiki.jpeg",
+            "title": "Inuyashiki",
+            "year": "2014",
+            "state": "Finished",
+            "genre": "Sci-Fi, Drama, Action",
+            "edition": "Kodansha Comics",
+            "nTomes": "10",
+            "mangaka": "Hiroya Oku",
+            "description": "Inuyashiki follows Ichiro Inuyashiki, an elderly man who gains incredible powers after a bizarre accident. With newfound abilities, he fights to protect humanity while facing Hiro Shishigami, a young man with the same powers who uses them for violence."
+        },
+        {
+            "id": 9,
+            "frontPage": "../images/akira.jpeg",
+            "title": "Akira",
+            "year": "1982",
+            "state": "Finished",
+            "genre": "Cyberpunk, Sci-Fi, Action",
+            "edition": "Kodansha Hardcover Edition",
+            "nTomes": "6",
+            "mangaka": "Katsuhiro Otomo",
+            "description": "In Akira, Kaneda, a biker in post-apocalyptic Neo-Tokyo, faces off against his friend Tetsuo, whose psychic powers threaten the city. As they clash, they uncover dark secrets tied to a mysterious government project known as 'Akira.'"
+        },
+        {
+            "id": 10,
+            "frontPage": "../images/goodnightpunpun.jpeg",
+            "title": "Goodnight Punpun",
+            "year": "2007",
+            "state": "Finished",
+            "genre": "Drama, Psychological",
+            "edition": "VIZ Signature Edition",
+            "nTomes": "13",
+            "mangaka": "Inio Asano",
+            "description": "Goodnight Punpun follows Punpun Punyama as he navigates the challenges of adolescence in a bleak, surreal world. The series delves into his thoughts, insecurities, and struggles with trauma and depression, capturing the darker side of growing up."
+        },
+        {
+            "id": 11,
+            "frontPage": "../images/blacklagoon.jpeg",
+            "title": "Black Lagoon",
+            "year": "2002",
+            "state": "Ongoing",
+            "genre": "Action, Thriller, Crime",
+            "edition": "VIZ Media Edition",
+            "nTomes": "12",
+            "mangaka": "Rei Hiroe",
+            "description": "Black Lagoon follows Rokuro Okajima, a businessman who joins a mercenary group called the Lagoon Company after being abandoned in the dangerous underworld of Southeast Asia. Together, they take on deadly jobs that put them up against mobsters, pirates, and warlords."
+        },
+        {
+            "id": 12,
+            "frontPage": "../images/pluto.jpeg",
+            "title": "Pluto",
+            "year": "2003",
+            "state": "Finished",
+            "genre": "Sci-Fi, Mystery, Drama",
+            "edition": "Perfect Edition by VIZ Media",
+            "nTomes": "8",
+            "mangaka": "Naoki Urasawa",
+            "description": "Pluto reimagines Osamu Tezuka's Astro Boy in a darker, detective-thriller context. Inspector Gesicht investigates a series of robot and human murders that threaten to upset the delicate peace between humans and AI in a futuristic world."
+        }
+    ]
+}
