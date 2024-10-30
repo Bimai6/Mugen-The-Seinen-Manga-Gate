@@ -62,3 +62,7 @@ main {
 .img-fluid {
     cursor: pointer;
 }
+
+.card_title:hover, .card_genre:hover, .card_year:hover, .card_state:hover, .card_tomes:hover, .card_mangaka:hover, .card_edition:hover, .card_description:hover{
+    color: #000000;
+}
