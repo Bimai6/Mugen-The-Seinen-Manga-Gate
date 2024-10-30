@@ -55,6 +55,10 @@ main {
     margin-top: 10px;
 }
 
+.img-card:hover{
+    filter: brightness(0.8);
+}
+
 .img-fluid {
     cursor: pointer;
 }
