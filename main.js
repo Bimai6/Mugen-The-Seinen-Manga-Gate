@@ -1,6 +1,6 @@
 const requestURL = "../json/mangas.json";
 
-// función asíncrona
+// Función asíncrona para obtener los datos
 async function fetchMangasJson() {
   const response = await fetch(requestURL);
   const mangas = await response.json();
@@ -12,7 +12,7 @@ fetchMangasJson().then((m) => {
 
   for (let index = 0; index < m.mangas.length; index++) {
     let id = m.mangas[index].id;
-    let frontPage = m.mangas[index].frontPage; // Imagen base
+    let frontPage = m.mangas[index].frontPage;
     let title = m.mangas[index].title;
     let year = m.mangas[index].year;
     let state = m.mangas[index].state;
@@ -22,11 +22,9 @@ fetchMangasJson().then((m) => {
     let mangaka = m.mangas[index].mangaka;
     let description = m.mangas[index].description;
 
-    // Agregar solo la imagen inicial y el contenedor de la carta
     mangaSection.innerHTML += `
     <div class="manga-container">
-        <!-- Esta es imagen base -->
-        <img src="${frontPage}" class="img-fluid p-2 img-manga" alt="Manga Cover"> <!-- Imagen base --> 
+        <img src="${frontPage}" class="img-fluid p-2 img-manga" alt="Manga Cover">
         
         <div class="card mb-3 text-end" style="background-color: red; color:#ffffff; max-width: 900px; display: none;" id="manga-${id}">
             <div class="row g-0">
@@ -45,37 +43,35 @@ fetchMangasJson().then((m) => {
                 </div>
                 <div class="col-md-4">
                     <div class="d-flex justify-content-center align-items-center" style="max-width:100%; max-height:100%">
-                        <!-- Esta es imagen carta -->
-                        <img src="${frontPage}" class="img-fluid p-2 img-card" alt="Manga Cover"> <!-- Imagen en la carta --> 
+                        <img src="${frontPage}" class="img-fluid p-2 img-card" alt="Manga Cover">
                     </div>
                 </div>
             </div>
         </div>
     </div>
-`;
+    `;
   }
 
   // Lógica para mostrar la carta y ocultar el resto
-$(".img-manga").on("click", function () {
+  $(".img-manga").on("click", function () {
     const selectedContainer = $(this).closest(".manga-container");
     const selectedCard = selectedContainer.find(".card");
-    const otherContainers = $(".manga-container").not(selectedContainer); // Selecciona los demás contenedores
+    const otherContainers = $(".manga-container").not(selectedContainer);
 
-    // Oculta las imágenes base y cartas en otros contenedores
-    otherContainers.find(".img-manga, .card").hide(); 
-    $(this).hide(); // Oculta la imagen base del contenedor seleccionado
-    selectedCard.show(); // Muestra la carta seleccionada
-});
+    // Oculta todas las imágenes base y cartas de otros contenedores
+    otherContainers.find(".img-manga, .card").hide();
+    
+    // Oculta la imagen base seleccionada y muestra la carta
+    $(this).hide();
+    selectedContainer.addClass("active");  // Expande el contenedor seleccionado
+    selectedCard.show();  // Muestra la carta seleccionada
+  });
 
-// Lógica para volver al estado anterior
-$(".img-card").on("click", function () {
-    const selectedCard = $(this).closest(".card");
-    const selectedContainer = selectedCard.closest(".manga-container");
-
-    // Muestra solo las imágenes base de todos los contenedores y oculta todas las cartas
-    $(".manga-container .img-manga").show(); // Muestra las imágenes base en todos los contenedores
-    $(".manga-container .card").hide(); // Oculta todas las cartas
-});
-
-
+  // Lógica para volver al estado anterior al hacer clic en la imagen de la carta
+  $(".img-card").on("click", function () {
+    // Muestra todas las imágenes base y oculta todas las cartas
+    $(".manga-container").removeClass("active");  // Restaura el ancho de todos los contenedores
+    $(".img-manga").show();  // Muestra las imágenes base
+    $(".card").hide();  // Oculta todas las cartas
+  });
 });
