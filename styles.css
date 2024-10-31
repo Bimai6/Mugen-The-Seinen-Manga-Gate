@@ -1,9 +1,11 @@
 main {
     margin-top: 90px;
+    position: relative;
+    width: 100%;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1900px;
     margin: 0 auto;
     margin-top: 100px;
 }
@@ -17,9 +19,11 @@ main {
 .manga-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: end;
+    justify-content: end;
     width: calc(33.33% - 20px);
     margin: 10px;
+    margin-bottom: 80px;
 }
 
 .manga-container.active {
@@ -55,7 +59,7 @@ main {
     margin-top: 10px;
 }
 
-.img-card:hover{
+.img-card:hover {
     filter: brightness(0.8);
 }
 
@@ -63,6 +67,22 @@ main {
     cursor: pointer;
 }
 
-.card_title:hover, .card_genre:hover, .card_year:hover, .card_state:hover, .card_tomes:hover, .card_mangaka:hover, .card_edition:hover, .card_description:hover{
+.card_title:hover, .card_genre:hover, .card_year:hover, .card_state:hover, .card_tomes:hover, .card_mangaka:hover, .card_edition:hover, .card_description:hover {
     color: #000000;
+}
+
+footer{
+    margin-top: auto;
+    height: 80px;
+    background-color: #000000;
+    z-index: 2000;
+}
+
+.fixed-center-card {
+    position: fixed; 
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    display: none;
 }
