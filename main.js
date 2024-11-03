@@ -2,8 +2,10 @@ const requestURL = "../json/mangas.json";
 
 const backgrounds = [
     '../images/blame_bg.png',
-    'path/to/background2.jpg',
-    'path/to/background3.jpg'
+    '../images/berserk_bg.png',
+    '../images/vagabond_bg.png',
+    '../images/monster_bg.png',
+    '../images/gantz_bg.png'
 ];
 
 async function fetchMangasJson() {
