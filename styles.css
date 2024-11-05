@@ -49,7 +49,7 @@ main {
     margin-top: 10px;
 }
 
-.img-card:hover {
+.img-card:hover, .img_footer:hover, .logo_mugen:hover{
     filter: brightness(0.8);
 }
 
@@ -57,21 +57,34 @@ main {
     cursor: pointer;
 }
 
-.card_title:hover {
+.card_title:hover, .footerInfo:hover{
     color: #d0d0d0;
 }
 
 footer{
-    margin-top: auto;
     height: 80px;
     background-color: #000000;
     z-index: 2000;
 }
 
+.footerInfo{
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.containerFooter{
+    margin-bottom: 7px;
+    margin-left: 50px;
+}
+
+.img_footer{
+    padding-bottom: 5px;
+}
+
 .fixed-center-card {
     position: fixed; 
     top: 50%;
-    left: 50%;
+    left: 70%;
     transform: translate(-50%, -50%);
     z-index: 1000;
     display: none;
