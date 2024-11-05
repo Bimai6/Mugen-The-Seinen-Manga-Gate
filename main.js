@@ -33,19 +33,16 @@ fetchMangasJson().then((m) => {
         <div class="manga-container" style="display: flex; flex-direction: column;">
             <img src="${frontPage}" class="img-fluid p-2 img-manga" alt="Manga Cover">
             
-            <div class="card mb-3 text-end fixed-center-card" style="background-color: red; color:#ffffff; max-width: 900px; display: none;" id="manga-${id}">
+            <div class="card mb-3 mt-10 text-end fixed-center-card" style="background-color: #6e1822; color:#ffffff;  max-width: 900px; display: none;" id="manga-${id}">
                 <div class="row g-0">
                     <div class="col-md-8 d-flex flex-column">
                         <div class="card-body flex-grow-1 d-flex flex-column">
-                            <h2 class="card-title card_title"><b>${title}</b></h2>
+                            <h1 class="card-title card_title" style="font-size: 55px"><b>${title}</b></h1>
                             <p class="card-text card_genre">${genre}</p>
                             <p class="card-title mb-4 card_tomes"><span class="h5 card_year">${year}</span> | ${nTomes} tomes</p>
                             <h4 class="card-title mb-4 card_mangaka">${mangaka}</h4>
                             <p class="card-text card_edition">${edition}</p>
-                            <p class="card-text card_description" style="font-size: 18px">${description}</p>
-                            <div class="mt-auto">
-                                <p class="card-text card_state">${state}</p>
-                            </div>
+                            <p class="card-text align-self-center card_description" style="font-size: 18px">${description}</p>
                         </div>
                     </div>
                     <div class="col-md-4">

@@ -42,15 +42,6 @@ main {
     filter: brightness(1.3);
 }
 
-.card {
-    display: none;
-    width: 100%;
-    background-color: red;
-    color: #ffffff;
-    margin-top: 10px;
-    transition: all 0.8s ease;
-}
-
 .img-card {
     max-width: 100%;
     height: auto;
@@ -66,8 +57,8 @@ main {
     cursor: pointer;
 }
 
-.card_title:hover, .card_genre:hover, .card_year:hover, .card_state:hover, .card_tomes:hover, .card_mangaka:hover, .card_edition:hover, .card_description:hover {
-    color: #f5f828;
+.card_title:hover {
+    color: #d0d0d0;
 }
 
 footer{
