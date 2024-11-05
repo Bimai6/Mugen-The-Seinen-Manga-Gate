@@ -33,7 +33,7 @@ fetchMangasJson().then((m) => {
         <div class="manga-container" style="display: flex; flex-direction: column;">
             <img src="${frontPage}" class="img-fluid p-2 img-manga" alt="Manga Cover">
             
-            <div class="card mb-3 mt-10 text-end fixed-center-card" style="background-color: #6e1822; color:#ffffff;  max-width: 900px; display: none;" id="manga-${id}">
+            <div class="card mb-3 mt-10 text-end fixed-center-card" style="background-color: #6e1822; color:#ffffff; max-width: 900px; display: none;" id="manga-${id}">
                 <div class="row g-0">
                     <div class="col-md-8 d-flex flex-column">
                         <div class="card-body flex-grow-1 d-flex flex-column">
@@ -43,6 +43,9 @@ fetchMangasJson().then((m) => {
                             <h4 class="card-title mb-4 card_mangaka">${mangaka}</h4>
                             <p class="card-text card_edition">${edition}</p>
                             <p class="card-text align-self-center card_description" style="font-size: 18px">${description}</p>
+                            <div class="mt-auto">
+                                <p class="card-text card_state">${state}</p>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -56,45 +59,69 @@ fetchMangasJson().then((m) => {
         `;
     }
 
+    document.querySelectorAll(".img-manga").forEach((imgManga, index) => {
+        imgManga.addEventListener("click", function () {
+            const selectedContainer = imgManga.closest(".manga-container");
+            const selectedCard = selectedContainer.querySelector(".card");
+            const otherContainers = document.querySelectorAll(".manga-container:not(.active)");
 
-    $(".img-manga").on("click", function () {
-        const selectedContainer = $(this).closest(".manga-container");
-        const selectedCard = selectedContainer.find(".card");
-        const otherContainers = $(".manga-container").not(selectedContainer);
-        const index = selectedContainer.index();
+            selectedContainer.style.order = "-1";
 
-        selectedContainer.css("order", "-1");
+            otherContainers.forEach((container) => {
+                const img = container.querySelector(".img-manga");
+                const card = container.querySelector(".card");
+                if (img) img.style.display = "none";
+                if (card) card.style.display = "none";
+            });
 
-        otherContainers.find(".img-manga, .card").hide();
+            window.scrollTo(0, 0);
 
-        window.scrollTo(0, 0);
+            imgManga.style.display = "none";
+            selectedContainer.classList.add("active");
+            selectedCard.style.display = "block";
 
-        $(this).hide();
-        selectedContainer.addClass("active"); 
-        selectedCard.show();
-
-        $("body").css({
-            "background-image": `url(${backgrounds[index]})`,
-            "background-size": "100% 100%",
-            "background-repeat": "no-repeat",
-            "z-index": "0"
+            document.body.style.backgroundImage = `url(${backgrounds[index]})`;
+            document.body.style.backgroundSize = "100% 100%";
+            document.body.style.backgroundRepeat = "no-repeat";
+            document.body.style.zIndex = "0";
         });
     });
 
-    $(".img-card").on("click", function () {
-        const selectedContainer = $(this).closest(".manga-container");
+    document.querySelectorAll(".img-card").forEach((imgCard) => {
+        imgCard.addEventListener("click", function () {
+            const selectedContainer = imgCard.closest(".manga-container");
 
-        selectedContainer.css("order", "0");
+            selectedContainer.style.order = "0";
 
-        $(".manga-container").removeClass("active");
-        $(".img-manga").show();
-        $(".card").hide();
+            document.querySelectorAll(".manga-container").forEach((container) => {
+                container.classList.remove("active");
+                const img = container.querySelector(".img-manga");
+                const card = container.querySelector(".card");
+                if (img) img.style.display = "block";
+                if (card) card.style.display = "none";
+            });
+
+            document.body.style.backgroundImage = "url('../images/default_background.jpg')";
+            document.body.style.backgroundSize = "cover";
+            document.body.style.backgroundRepeat = "no-repeat";
+            document.body.style.zIndex = "0";
+        });
+    });
+
+    const textStates = document.querySelectorAll('.card_state');
+    textStates.forEach((textState) => {
+        textState.addEventListener("mouseover", () => {
+            if (textState.innerText.includes("Ongoing")) {
+                textState.style.color = "#00FF00";
+            } else if (textState.innerText.includes("Hiatus")) {
+                textState.style.color = "#FFFF00";
+            } else {
+                textState.style.color = "#FF0000";
+            }
+        });
         
-        $("body").css({
-            "background-image": "url('../images/default_background.jpg')",
-            "background-size": "cover",
-            "background-repeat": "no-repeat",
-            "z-index": "0"
+        textState.addEventListener("mouseout", () => {
+            textState.style.color = "#FFFFFF";
         });
     });
 });
