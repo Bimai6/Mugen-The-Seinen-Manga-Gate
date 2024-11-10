@@ -41,7 +41,7 @@ The aesthetic of Mugen is defined by a minimalist color palette:
 
 Each manga entry is defined in the `mangas.json` file with the following structure:
 
-json
+manga
 `{
     "frontPage": "",
     "title": "",
