@@ -1,6 +1,7 @@
 # Mugen: The Seinen Manga Gate
 
-![Screenshot](file:///D:/Datos%20Usuario/Pictures/Screenshots/Captura%20de%20pantalla%20(139).png)
+![Screenshot 1](Screenshot1.png)
+![Screenshot 2](Screenshot2.png)
 
 **Mugen: The Seinen Manga Gate** is an interactive catalog website that showcases a selection of curated seinen manga titles. With its dark and intense design, Mugen offers manga enthusiasts a unique way to explore information about each manga, including detailed descriptions and immersive background visuals.
 
