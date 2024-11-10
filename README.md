@@ -44,8 +44,6 @@ json
 📂 Project Structure
 The project is organized as follows:
 
-plaintext
-Copiar código
 CARTEERA_MLG/
 ├── images/
 │   └── [Manga cover images, e.g., blame.jpeg]
