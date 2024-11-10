@@ -5,7 +5,14 @@ const backgrounds = [
     '../images/berserk_bg.png',
     '../images/vagabond_bg.png',
     '../images/monster_bg.png',
-    '../images/gantz_bg.png'
+    '../images/gantz_bg.png',
+    '../images/20thcenturyboys_bg.png',
+    '../images/ajin_bg.png',
+    '../images/inuyashiki_bg.png',
+    '../images/akira_bg.png',
+    '../images/punpun_bg.png',
+    '../images/blacklagoon_bg.png',
+    '../images/pluto_bg.png'
 ];
 
 async function fetchMangasJson() {
