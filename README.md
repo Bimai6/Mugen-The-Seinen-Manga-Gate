@@ -1,17 +1,17 @@
 Mugen: The Seinen Manga Gate
 Mugen: The Seinen Manga Gate is an interactive catalog website that showcases a selection of curated seinen manga titles. With its dark and intense design, Mugen offers manga enthusiasts a unique way to explore information about each manga, including detailed descriptions and immersive background visuals.
 
-💡Initial Idea.
+💡Initial Idea:
 Make a right to left oriented website to offer an unique design. Manga is read right to left, so it was ideal. Seinen demography were selected to give a "darker" looking to the website. Mugen was selected as the title, because it matched with the idea of the logo, making a red square to emphasize the attention to the right-top, kind of a "infinite gate to the manga world". 
 
-🎨 Project Colors
+🎨 Project Colors:
 The aesthetic of Mugen is defined by a minimalist color palette:
 
 White: for clean, readable typography.
 Black: for a bold, dark background that highlights content.
 Red and Bordeaux: accent colors to reflect the mature and intense themes of seinen manga.
 
-🌟 Features
+🌟 Features:
 Seinen Manga Catalog: Browse through a hand-picked selection of titles in the seinen genre.
 Interactive Manga Cards: Each manga has a detailed card displaying the following information:
 Cover Image
