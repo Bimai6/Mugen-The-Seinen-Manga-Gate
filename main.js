@@ -87,7 +87,10 @@ fetchMangasJson().then((m) => {
             selectedContainer.classList.add("active");
             selectedCard.style.display = "block";
 
-            document.body.style.backgroundImage = `url(${backgrounds[index]})`;
+            document.body.style.backgroundImage = `
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+    url(${backgrounds[index]})
+`;
             document.body.style.backgroundSize = "100% 100%";
             document.body.style.backgroundRepeat = "no-repeat";
             document.body.style.zIndex = "0";
@@ -108,7 +111,7 @@ fetchMangasJson().then((m) => {
                 if (card) card.style.display = "none";
             });
 
-            document.body.style.backgroundImage = "url('../images/default_background.jpg')";
+            document.body.style.backgroundImage = "none";
             document.body.style.backgroundSize = "cover";
             document.body.style.backgroundRepeat = "no-repeat";
             document.body.style.zIndex = "0";
